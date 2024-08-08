@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(cors({
     credentials: true,
-    origin: ['http://localhost:5173', 'http://localhost:5174']
+    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://booking-1yflt4xfd-imashims-projects.vercel.app/']
 }));
 
 mongoose.connect(process.env.MONGO_URL)
